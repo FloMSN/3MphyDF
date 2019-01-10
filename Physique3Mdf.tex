@@ -1,0 +1,59 @@
+\documentclass[TS]{sesamanuel}
+
+\input{commandes-manuel-phy}
+\input{commandes-tikz}
+
+\graphicspath{%
+  {forcesEtInteractions/images/}%
+  {annexes/images/}%
+  {images/}%
+}
+
+% création d'un nouveau thème Mécanique pour le document
+\NewThema{M}{m}{mécanique}{Mécanique}{MÉCANIQUE}{PartieFonction}{A3}
+\renewcommand\ListeMethodesThemes{{m}{M}}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3e de couverture
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\begin{prerequis}[Un manuel Florimont]
+\begin{itemize}
+\item L'Institut Florimont a réalisé la transcription dans le langage de description de documents libre et gratuit \LaTeX{} en utilisant la classe \texttt{sesamanuel} développée par l'association Sésamath;
+\item E. Villié a réalisé la couverture pour l'Institut Florimont;
+\item Version Septembre 2019 --- Institut Florimont (Genève);
+\item Publication sous licence libre Creative Commons CC-BY-SA
+\end{itemize}
+ \end{prerequis}
+
+\vspace{1em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% fin de la 3e de couverture
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% on règle le numéro de la première page
+\setcounter{page}{6}
+
+% et la, premier chapitre du livre
+\themaM
+\include{forcesEtInteractions/forcesInter}
+
+
+% début des annexes
+\include{annexes/demarcheScientifique}
+\include{annexes/critereEval}
+\include{annexes/concevoirExp}
+
+\AfficheListeMethodes
+\AfficheCorriges[2]
+\AfficheLexique
+
+\end{document}
+
+
+% todo
+% ajouter des exercices sans calculatrice, unité, dém sc, etc. pour chaque chapitre.

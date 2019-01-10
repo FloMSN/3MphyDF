@@ -1,0 +1,48 @@
+% commandes utilisées pour la physiques
+
+
+% divers
+\providecommand{\abs}[1]{\lvert#1\rvert}	% pour avoir les valeurs absolues
+\providecommand{\norme}[1]{\lVert#1\rVert}	% pour avoir les normes en mode math
+\providecommand{\vect}[1]{\overrightarrow{#1}}	% les vecteurs en mode math
+\newcommand{\ee}[1]{$\times$10$^{{#1}}$}	% x10^argument
+\newcommand{\eem}[1]{\times 10^{{#1}}}		% x10^argument en mode math
+
+% physique : unités
+\newcommand{\vit}{\,m$\cdot$s$^{-1}$\xspace} 		% m.s-1
+\newcommand{\vitk}{\,km$\cdot$h$^{-1}$\xspace}		% km.h-1
+\newcommand{\acc}{\,m$\cdot$s$^{-2}$\xspace} 		% m.s-2
+\newcommand{\vitr}{\,rad$\cdot$s$^{-1}$\xspace} 	% rad.s-1
+
+\newcommand{\unitun}[2]{\,{#1}$^{{#2}}$\xspace} 	% arg1^arg2
+\newcommand{\unitdeux}[3]{\,{#1}$\cdot${#2}$^{{#3}}$\xspace} % arg1.arg2^arg3
+\newcommand{\unittrois}[4]{\,{#1}$\cdot${#2}$\cdot${#3}$^{{#4}}$\xspace} % arg1.arg2.arg3^arg4
+
+% physique : dérivées
+\newcommand{\dt}[1]{\frac{\text{d}{#1}}{\text{d}t}}	% en mode math d(arg1)/dt
+\newcommand{\ddt}[1]{\frac{\text{d}^2{#1}}{\text{d}t^2}}	% en mode math d2(arg1)/dt2
+
+% physique : vecteur à 2 et à 3 composantes et les accolades pour 2 et 3 lignes
+\newcommand{\trinome}[3]{\left(\begin{matrix}{#1}\\{#2}\\{#3}\\ \end{matrix}\right)} %id. binom
+\newcommand{\binome}[2]{\left(\begin{matrix}{#1}\\{#2}\\ \end{matrix}\right)} %id. binom
+\newcommand{\binacc}[2]{\left\lbrace\begin{array}{l}{#1}\\{#2}\\ \end{array}\right.} % accolade
+\newcommand{\trinacc}[3]{\left\lbrace\begin{array}{l}{#1}\\{#2}\\{#3}\\ \end{array}\right.} %ac
+
+
+% thermodynamique
+\newcommand{\jmol}{\,J$\cdot$mol$^{-1}$\xspace} 	% J.mol-1
+\newcommand{\kjmol}{\,kJ$\cdot$mol$^{-1}$\xspace} 	% kJ.mol-1
+\newcommand{\dhf}[1]{\Delta \text{H}^\text{o}_\text{f}(\text{#1})}  % delta H° formation (X)
+\newcommand{\dhfr}{\Delta \text{H}^\text{o}_\text{f}}  % delta H° formation
+\newcommand{\dhr}{\Delta \text{H}^\text{o}_\text{R}}  % delta H° réaction
+\newcommand{\dho}{\Delta \text{H}^\text{o}}  % delta H°
+\newcommand{\dso}{\Delta \text{S}^\text{o}}  % delta S°
+\newcommand{\dgo}{\Delta \text{G}^\text{o}}  % delta G°
+\newcommand{\dsr}{\Delta \text{S}^\text{o}_\text{R}}  % delta S° réaction
+
+% chimie
+\newcommand{\mm}{\,g$\cdot$mol$^{-1}$\xspace} 		% g.mol-1
+\newcommand{\conc}{\,mol$\cdot$L$^{-1}$\xspace}	% mol.L-1
+\newcommand{\concmass}{\,g$\cdot$L$^{-1}$\xspace}	% g.L-1
+\newcommand{\condulambda}{\,S$\cdot$m$^{2}\cdot$mol$^{-1}$\xspace} % S.m2.mol-1
+
